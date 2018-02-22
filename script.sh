@@ -1,6 +1,6 @@
 #!/bin/bash
-lst1=$(cat /home/iutcb/Bureau/users.txt)
-for i in $lst1
+liste=$(cat /home/iutcb/Bureau/users.txt)
+for i in $liste
 do
 a1=$(echo $i | awk -F: '{print $1}')
 useradd $a1
